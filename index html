@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xolile & Thembeka</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#0F6B57">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="particles"></div>
+
+<div class="container">
+
+    <h1>Xolile <br>&<br> Thembeka</h1>
+
+    <h2>Our Wedding Journey</h2>
+
+    <p>20–21 March 2027</p>
+
+    <button id="enterButton">
+        Enter Wedding
+    </button>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
