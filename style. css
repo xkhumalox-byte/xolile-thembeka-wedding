@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #031b17, #0F6B57, #02100d);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #D4AF37;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+}
+
+h2 {
+    margin-top: 20px;
+    color: white;
+}
+
+p {
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+button {
+    margin-top: 40px;
+    padding: 15px 35px;
+    background: #D4AF37;
+    color: #03231d;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(212,175,55,0.5);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}.particles {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particles::before,
+.particles::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #D4AF37;
+    border-radius: 50%;
+    box-shadow:
+        50px 80px #D4AF37,
+        120px 180px #D4AF37,
+        220px 60px #D4AF37,
+        320px 250px #D4AF37,
+        90px 320px #D4AF37,
+        280px 420px #D4AF37;
+    animation: floatSparkles 10s linear infinite;
+    opacity: 0.7;
+}
+
+.particles::after {
+    animation-duration: 15s;
+    opacity: 0.4;
+}
+
+@keyframes floatSparkles {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-120vh);
+    }
+}
