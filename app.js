@@ -54,7 +54,29 @@ button.addEventListener("click", () => {
                 </div>
                 `;
 
-                document.body.style.opacity = "1";
+                document.body.style.opacity = "1";document.getElementById("countdownButton").addEventListener("click", () => {
+
+    document.body.style.opacity = "0";
+
+    setTimeout(() => {
+
+        document.body.innerHTML = `
+        <div class="container">
+
+            <h1>Countdown 💚</h1>
+
+            <h2 id="countdown"></h2>
+
+        </div>
+        `;
+
+        document.body.style.opacity = "1";
+
+        startCountdown();
+
+    },600);
+
+});
 
             },600);
 
