@@ -61,16 +61,33 @@ button.addEventListener("click", () => {
     setTimeout(() => {
 
         document.body.innerHTML = `
-        <div class="container">
+<div class="container">
 
-            <h1>Countdown 💚</h1>
+<h1>You're Invited</h1>
 
-            <h2 id="countdown"></h2>
+<div class="envelope">
 
-        </div>
-        `;
+<div class="flap"></div>
 
-        document.body.style.opacity = "1";
+<div class="seal" id="seal">
+
+💛
+
+</div>
+
+</div>
+
+<p>Tap the seal to open your invitation.</p>
+
+</div>
+`;
+        
+
+        document.body.style.opacity = "1";document.getElementById("seal").addEventListener("click",()=>{
+
+alert("✨ The luxury invitation opens next...");
+
+});
 
         startCountdown();
 
