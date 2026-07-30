@@ -93,3 +93,14 @@ button:hover {
         transform: translateY(-120vh);
     }
 }
+button{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    background:#D4AF37;
+    color:#02100d;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(212,175,55,.5);
+}
